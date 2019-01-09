@@ -8,7 +8,10 @@ By default `kubelet` allows anonymous authentication:
 
 ```
 --anonymous-auth
-	Enables anonymous requests to the Kubelet server. Requests that are not rejected by another authentication method are treated as anonymous requests. Anonymous requests have a username of system:anonymous, and a group name of system:unauthenticated. (default true)
+    Enables anonymous requests to the Kubelet server. Requests that are not
+    rejected by another authentication method are treated as anonymous
+    requests. Anonymous requests have a username of system:anonymous, and a
+    group name of system:unauthenticated. (default true)
 ```
 
 The `kubelet` API is not documented but the [code](https://github.com/kubernetes/kubernetes/blob/master/pkg/kubelet/server/server.go) is straightforward.
@@ -32,10 +35,15 @@ $ pip3 install -r requirements.txt
 This command runs `ls /tmp` in the `tiller` container and returns the output:
 
 ```
-$ python3 kubelet-anon-rce.py --node 10.1.2.3 --namespace kube-system --pod tiller-797d1b1234-gb6qt --container tiller --exec "ls /tmp"
+$ python3 kubelet-anon-rce.py           \
+          --node 10.1.2.3               \
+          --namespace kube-system       \
+          --pod tiller-797d1b1234-gb6qt \
+          --container tiller            \
+          --exec "ls /tmp"
 ```
 
-## Usage 
+## Usage
 
 ```
 $ python kubelet-anon-exec.py --help
