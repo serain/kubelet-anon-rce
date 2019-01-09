@@ -16,9 +16,7 @@ By default `kubelet` allows anonymous authentication:
 
 The `kubelet` API is not documented but the [code](https://github.com/kubernetes/kubernetes/blob/master/pkg/kubelet/server/server.go) is straightforward.
 
-There is a `/exec` endpoint which allows running a command in a target container and returns a link to fetch the output.
-
-The link is a stream that should be read with a websocket.
+There is a `/exec` endpoint which allows running a command in a target container and returns a link to fetch the output. That link is a stream that should be read with a WebSocket.
 
 This script handles it all easily.
 
