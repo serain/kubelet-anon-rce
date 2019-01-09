@@ -41,7 +41,15 @@ $ python3 kubelet-anon-rce.py           \
           --exec "ls /tmp"
 ```
 
-## Usage
+## How do I find containers?
+
+You can get a list of pods/containers running on the node from the `/pods` endpoint:
+
+```
+$ curl https://10.1.2.3:10250/pods
+```
+
+## Help
 
 ```
 $ python kubelet-anon-exec.py --help
