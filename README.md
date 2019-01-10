@@ -49,6 +49,8 @@ You can get a list of pods/containers running on the node from the `/pods` endpo
 $ curl https://10.1.2.3:10250/pods
 ```
 
+This is also useful to confirm anonymous authentication.
+
 ## Help
 
 ```
