@@ -1,9 +1,8 @@
-import asyncio
 import argparse
 import requests
-from websocket import create_connection
 import urllib3
 import ssl
+from websocket import create_connection
 from urllib.parse import urljoin
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
