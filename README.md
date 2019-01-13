@@ -23,7 +23,7 @@ This script handles it all easily.
 ## Install
 
 ```
-$ git clone https://github.com/serain/kubelet-anon-exec.git
+$ git clone https://github.com/serain/kubelet-anon-rce.git
 $ cd kubelet-anon-exec
 $ pip3 install -r requirements.txt
 ```
