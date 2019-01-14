@@ -19,7 +19,7 @@ PARAMS = {
 
 def get_args():
     parser = argparse.ArgumentParser(
-        description='Run commands against a Kubelet endpoint.')
+        description='Run commands in a container on a Kubelet endpoint (requires "--anonymous-auth true", ie: the default.')
     parser.add_argument('--port', default=10250,
                         help='kubelet port, default: 10250')
     parser.add_argument('-t', '--target', required=True,
