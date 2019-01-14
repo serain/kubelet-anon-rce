@@ -1,6 +1,6 @@
 # Kubelet Anonymous RCE
 
->Executes commands on a kubelet endpoint that allows anonymous authentication (default)
+>Executes commands in a container on a kubelet endpoint that allows anonymous authentication (default)
 
 ## Why?
 
